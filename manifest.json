@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "Hebrew filter",
+  "version": "0.1.0",
+  "description": "Removes non-Hebrew characters from questions",
+  "browser_action": {
+    "default_icon": "alef.png"
+  },
+  "content_scripts": [{
+    "js": ["content.js"],
+    "matches": ["https://moodle.fer.hr/mod/quiz/attempt.php*"]
+  }]
+ 
+}
